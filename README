@@ -1,0 +1,37 @@
+.. -*- restructuredtext -*-
+
+======================
+Sphinx Template Helper
+======================
+
+:author: Akitoshi Ohta <fire.kuma8+github2@gmail.com>
+
+About
+=====
+
+This extension is a helper for creating your own template.
+
+Install
+=======
+
+::
+
+  $ cd sphinxcontrib-templatehelper
+  $ python setup.py install
+
+Use
+===
+
+conf.py の extensions に 'sphinxcontrib.templatehelper' を追加します。
+
+.. code-block:: python
+
+  extensions = ['sphinxcontrib.templatehelper']
+
+カスタムテンプレート内で、 basename, pardir を呼び出すことができます。
+
+basename には、拡張子なしのファイル名が入っています。
+
+pardir には、ファイルが入っているディレクトリ名が入ります。
+親がない場合には、 '.' が入ります。
+
