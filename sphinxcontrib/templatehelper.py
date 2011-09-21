@@ -10,9 +10,11 @@ def add_fileinfo(app, pagename, templatename, context, doctree):
     if len(pagename.split('/')) > 1:
       context['basename'] = pagename.split('/')[-1]
       context['pardir'] = pagename.split('/')[-2]
+      context['secdir'] = "section-" + pagename.split('/')[0]
     else:
       context['basename'] = pagename
       context['pardir'] = '.'
+      context['secdir'] = "section-" + pagename
 
 def setup(app):
     app.add_config_value('templatehelper_id', '', 'html')
