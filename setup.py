@@ -12,7 +12,7 @@ requires = ['Sphinx>=0.6']
 
 setup(
     name='sphinxcontrib-templatehelper',
-    version='0.1',
+    version='0.2',
     url='http://aohta.github.com/sphinxcontrib-templatehelper',
     #download_url='http://pypi.python.org/pypi/sphinxcontrib-${name}',
     license='BSD',
